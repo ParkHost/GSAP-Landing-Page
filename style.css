@@ -215,7 +215,7 @@ button {
   }
 }
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .loading-screen {
     display: none;
   }
@@ -228,4 +228,4 @@ button {
   h1 {
     display: none;
   }
-}
+} */
