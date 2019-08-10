@@ -98,3 +98,134 @@ h1 {
   margin-bottom: 0px;
   text-transform: uppercase;
 }
+
+#tagline {
+  width: 640px;
+}
+
+p {
+  color: rgb(95, 95, 95);
+  font-weight: 200;
+  font-family: "Roboto";
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.buttons {
+  margin-top: 40px;
+}
+
+button {
+  margin-right: 10px !important;
+  padding: 14px 30px;
+  border: none;
+  color: #fff;
+  font-size: 12px !important;
+  letter-spacing: 4px;
+  font-weight: 300;
+}
+
+#one {
+  background: none;
+  border: 0.3pt solid rgba(255, 255, 255, 0.3);
+}
+
+#two {
+  background: linear-gradient(
+    135deg,
+    rgb(106, 219, 157) 0%,
+    rgb(23, 167, 88) 100%
+  );
+}
+
+.media {
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  right: 6%;
+}
+
+.media ul {
+  position: absolute;
+  list-style: none;
+}
+
+.media ul li {
+  color: grey;
+  padding: 12px 0;
+  display: inline-block !important;
+}
+
+.bottom-text {
+  position: absolute;
+  z-index: 1;
+  color: grey;
+  font-size: 18px;
+  font-family: monospace;
+  margin-left: 2em;
+  bottom: 40px;
+}
+
+.copyright {
+  position: absolute;
+  z-index: 1;
+  color: grey;
+  font-family: "Roboto";
+  font-weight: 100;
+  margin-right: 2em;
+  bottom: 40px;
+  right: 0%;
+}
+
+.loading-screen {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #0a0a0a;
+  z-index: 2;
+}
+
+.ring {
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 2;
+  width: 40%;
+  opacity: 0.7;
+}
+
+.ringOne img {
+  animation: rotateRing 2s linear infinite;
+}
+
+.ringTwo img {
+  animation: rotateRing 2s linear infinite;
+}
+
+@keyframes rotateRing {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 900px) {
+  .loading-screen {
+    display: none;
+  }
+  .ring img {
+    display: none;
+  }
+  .header p,
+  button,
+  .media,
+  h1 {
+    display: none;
+  }
+}
